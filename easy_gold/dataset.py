@@ -10,6 +10,7 @@ DATA_ROOT = Path('../input/titanic' if ON_KAGGLE else './resources')
 Categorical_Features = ['Embarked', 'Pclass', 'Sex']
 train_path = DATA_ROOT / "train.csv"
 test_path = DATA_ROOT / "test.csv"
+submit_path = DATA_ROOT / "gender_submission.csv"
 
 
 def preprocess(data):
@@ -23,6 +24,10 @@ def preprocess(data):
     data['IsAlone'] = 0
     data.loc[data['FamilySize'] == 1, 'IsAlone'] = 1
     return data
+
+
+def load_submit():
+    return pd.read_csv(submit_path)
 
 
 def load_dataset(test_size=0.3):
