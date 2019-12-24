@@ -1,6 +1,6 @@
 from setuptools import setup
 
 setup(
-    name='easy_gold',
-    packages=['easy_gold'],
+    name='titanic_sample',
+    packages=['titanic_sample'],
 )
