@@ -9,6 +9,7 @@ verify_ssl = true
 kaggle = "==1.5.6"
 pandas = "==0.25.3"
 lightgbm = "==2.3.1"
+scikit-learn = "==0.22"
 
 [requires]
 python_version = "3.6"
