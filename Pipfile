@@ -1,0 +1,14 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+kaggle = "==1.5.6"
+pandas = "==0.25.3"
+lightgbm = "==2.3.1"
+
+[requires]
+python_version = "3.6"
