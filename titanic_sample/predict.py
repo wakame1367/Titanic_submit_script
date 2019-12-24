@@ -2,7 +2,7 @@ import argparse
 
 import lightgbm as lgb
 
-from .dataset import load_dataset, load_submit
+from titanic_sample.dataset import load_dataset, load_submit
 
 
 def get_arguments():

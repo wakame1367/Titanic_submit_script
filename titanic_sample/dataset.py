@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-from .utils import ON_KAGGLE
+from titanic_sample.utils import ON_KAGGLE
 
 DATA_ROOT = Path('../input/titanic' if ON_KAGGLE else './resources')
 Categorical_Features = ['Embarked', 'Pclass', 'Sex']

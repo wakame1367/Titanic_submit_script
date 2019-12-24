@@ -2,7 +2,7 @@ import argparse
 
 import lightgbm as lgb
 
-from .dataset import DATA_ROOT, load_dataset
+from titanic_sample.dataset import DATA_ROOT, load_dataset
 
 train_path = DATA_ROOT / "train.csv"
 test_path = DATA_ROOT / "test.csv"
